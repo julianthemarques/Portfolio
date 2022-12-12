@@ -1,0 +1,11 @@
+
+.carousel-component{
+    height: 70%;
+    width: 70%;
+    margin: 6rem auto;
+}
+
+.carousel-item{
+    height:100%;
+    width: 100%;
+}
