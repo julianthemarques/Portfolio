@@ -41,6 +41,9 @@ const resources = {
     "Your message*" : "Your message*",
     "Phone" : "Phone",
     "Address" : "Address",
+    "Home" : "Home",
+    "About" : "About",
+    "Projects" : "Projects",
 }},
     pt: {translation:
     {helloHome: "Oi eu o",
@@ -81,6 +84,9 @@ const resources = {
     "Your message*" : "Sua Mensagem*",
     "Phone" : "Telefone",
     "Address" : "Endereço",
+    "Home" : "Início",
+    "About" : "Sobre",
+    "Projects" : "Projetos",
 }},
 }
 

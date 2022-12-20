@@ -1,9 +1,11 @@
 import React from "react";
-import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 import profilePic from "../img/profilePic.webp";
 
 function Nav() {
+  const { t } = useTranslation();
   return (
     <NavStyled>
       <div className="profilePic">
@@ -12,22 +14,22 @@ function Nav() {
       <ul className="nav-items">
         <li className="nav-item">
           <NavLink to="/" activeClassName="active-class" exact>
-            Home
+            {t("Home")}
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink to="/about" activeClassName="active-class" exact>
-            About
+            {t("About")}
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink to="/projects" activeClassName="active-class" exact>
-            Projects
+            {t("Projects")}
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink to="/contact" activeClassName="active-class" exact>
-            Contact
+            {t("Contact")}
           </NavLink>
         </li>
       </ul>
