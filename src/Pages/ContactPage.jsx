@@ -1,16 +1,16 @@
-import React, { useRef } from "react";
-import styled from "styled-components";
-import { InnerLayout } from "../styles/Layout";
-import Title from "../Components/Title";
-import PrimaryButton from "../Components/PrimaryButton";
-import PhoneIcon from "@material-ui/icons/Phone";
+import emailjs from "@emailjs/browser";
 import EmailIcon from "@material-ui/icons/Email";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
-import ContactItem from "../Components/ContactItem";
-import emailjs from "@emailjs/browser";
+import PhoneIcon from "@material-ui/icons/Phone";
+import React, { useRef } from "react";
 import { withTranslation } from "react-i18next";
+import styled from "styled-components";
+import ContactItem from "../Components/ContactItem";
+import PrimaryButton from "../Components/PrimaryButton";
+import Title from "../Components/Title";
+import { InnerLayout } from "../styles/Layout";
 
-function ContactPage() {
+function ContactPage({ t }) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -39,16 +39,16 @@ function ContactPage() {
   const location = <LocationOnIcon />;
   return (
     <>
-      <Title title={"Contact"} span={"Contact"} />
+      <Title title={t("Contact")} span={t("Contact")} />
       <ContactPageStyled>
         <InnerLayout className={"contact-section"}>
           <div className="left-content">
             <div className="contact-title">
-              <h4>Contact Me</h4>
+              <h4>{t("Contact Me")}</h4>
             </div>
             <form className="form" ref={form} onSubmit={sendEmail}>
               <div className="form-field">
-                <label htmlFor="name">Name*</label>
+                <label htmlFor="name">{t("Name*")}</label>
                 <input type="text" id="name" name="name" required />
               </div>
               <div className="form-field">
@@ -56,11 +56,11 @@ function ContactPage() {
                 <input type="email" id="email" name="email" required />
               </div>
               <div className="form-field">
-                <label htmlFor="subject">Subject</label>
+                <label htmlFor="subject">{t("Subject*")}</label>
                 <input type="text" id="subject" name="subject" required />
               </div>
               <div className="form-field">
-                <label htmlFor="text-area">Your Message*</label>
+                <label htmlFor="text-area">{t("Your message*")}</label>
                 <textarea
                   name="message"
                   id="textarea"
@@ -70,13 +70,13 @@ function ContactPage() {
                 ></textarea>
               </div>
               <div className="form-field f-button">
-                <PrimaryButton title={"Send Email"} type="submit" />
+                <PrimaryButton title={t("Send Email")} type="submit" />
               </div>
             </form>
           </div>
           <div className="right-content">
             <ContactItem
-              title={"Phone"}
+              title={t("Phone")}
               icon={phone}
               cont={"+55 (31) 9-9868-0878"}
             />
@@ -86,10 +86,10 @@ function ContactPage() {
               cont={"juliano.lima.marques@outlook.com"}
             />
             <ContactItem
-              title={"Address"}
+              title={t("Address")}
               icon={location}
               cont={"30530-290"}
-              adress={"Mariano Procópio 800, Belo Horizonte, Brasil "}
+              adress={"João Pinheiro, Belo Horizonte, Brasil "}
             />
           </div>
         </InnerLayout>

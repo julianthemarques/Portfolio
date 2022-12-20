@@ -1,5 +1,5 @@
-import todoimg from "../img/projImages/todoimg.jpg";
 import pokemonimg from "../img/projImages/pokemonimg.png";
+import todoimg from "../img/projImages/todoimg.jpg";
 
 const projects = [
   {

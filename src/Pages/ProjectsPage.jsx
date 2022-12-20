@@ -8,7 +8,7 @@ import { InnerLayout } from "../styles/Layout";
 
 const allButtons = ["All", ...new Set(projects.map((item) => item.category))];
 
-function ProjectsPage() {
+function ProjectsPage({ t }) {
   const [menuItem, setMenuItems] = useState(projects);
   const [button, setButtons] = useState(allButtons);
 
@@ -23,7 +23,7 @@ function ProjectsPage() {
   };
   return (
     <>
-      <Title title={"projects"} span={"projects"} />
+      <Title title={t("projects")} span={t("projects")} />
       <InnerLayout>
         <Button filter={filter} button={button} />
         <Menu menuItem={menuItem} />

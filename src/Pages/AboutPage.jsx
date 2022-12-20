@@ -6,7 +6,7 @@ import Resume from "../Components/Resume";
 import Skills from "../Components/Skills";
 import Title from "../Components/Title";
 
-function AboutPage({ t }) {
+function AboutPage({ t }){
   return (
     <AboutStyled>
       <Title title={t("aboutme")} span={t("aboutme")} />
