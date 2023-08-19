@@ -10,7 +10,7 @@ function PrimaryButton({ title, type }) {
 }
 
 const PrimaryButtonStyled = styled.button`
-  margin-left: 3rem;
+  align-self: center;
   padding: 0.8rem 2.5rem;
   cursor: pointer;
   display: inline-block;

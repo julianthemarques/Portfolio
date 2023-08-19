@@ -6,6 +6,8 @@ import { withTranslation } from "react-i18next";
 import styled from "styled-components";
 import Typewriter from "typewriter-effect";
 import Particle from "../Components/Particle";
+import PrimaryButton from "../Components/PrimaryButton";
+import curriculo from "../assets/curriculo-juliano-lima-marques.pdf";
 
 function HomePage({ t, particlesColor }) {
   return (
@@ -15,7 +17,7 @@ function HomePage({ t, particlesColor }) {
       </div>
       <div className="typography">
         <h1>
-          {t("helloHome")} <span className="name-span">Juba</span>
+          {t("helloHome")} <span className="name-span">Julian</span>
         </h1>
         <p>
           <Typewriter
@@ -28,7 +30,7 @@ function HomePage({ t, particlesColor }) {
         </p>
         <div className="icons">
           <a
-            href="https://github.com/juulmrqs"
+            href="https://github.com/julianthemarques"
             target="_blank"
             rel="noreferrer"
             className="icon i-github"
@@ -52,6 +54,9 @@ function HomePage({ t, particlesColor }) {
             <InstagramIcon />
           </a>
         </div>
+        <a className="button" href={curriculo} download>
+          <PrimaryButton title={t("curriculumButton")} />
+        </a>
       </div>
     </HomePageStyled>
   );
@@ -61,6 +66,10 @@ const HomePageStyled = styled.header`
   width: 100%;
   height: 100vh;
   position: relative;
+  .button {
+    display: block;
+    margin-top: 2rem;
+  }
   .name-span {
     color: var(--primary-color);
   }

@@ -21,7 +21,7 @@ const resources = {
     "Freelance / Intern" : "Freelance / Intern",
     My: "My",
     Hobbies: "My hobbies consists in coding, hikings, camping, fishing and play music instruments.",
-    curriculumButton: "curriculum Download",
+    curriculumButton: "Download CV",
     "This is how much I'm used to these" : "This is how much I'm used to these",
     tools: "tools",
     Resume: "Resume",
