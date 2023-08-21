@@ -21,7 +21,12 @@ function Resume() {
         </div>
         <div className="resume-content">
           <ResumeItem
-            year={"2015 - 2020"}
+            date={"Jun 2022 - present"}
+            title={t("Intern - Full Stack Developer")}
+            subTitle={"XP Educação"}
+          />
+          <ResumeItem
+            date={"Apr 2022 - Jun 2022"}
             title={t("Intern - Full Stack Developer")}
             subTitle={"Instituto e Gestão de Tecnologia da Informática"}
           />
@@ -31,17 +36,17 @@ function Resume() {
         </div>
         <div className="resume-content">
           <ResumeItem
-            date={"2021 - present"}
-            title={
-              t("System Analysis and Development - Universidade Estácio de Sá")
-            }
+            date={"2021 - 2023"}
+            title={t(
+              "System Analysis and Development - Universidade Estácio de Sá"
+            )}
             subTitle={t("Currently Major Course")}
           />
           <ResumeItem
             date={"2019 - 2021"}
-            title={
-              t("Law School - Pontifícia Universidade Católica de Minas Gerais")
-            }
+            title={t(
+              "Law School - Pontifícia Universidade Católica de Minas Gerais"
+            )}
             subTitle={t("Incompleted Law Course")}
           />
           <ResumeItem

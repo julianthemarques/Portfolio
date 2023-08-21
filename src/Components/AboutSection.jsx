@@ -29,7 +29,7 @@ function AboutSection() {
             <p>: {t("Brazillian")} </p>
             <p>: {t("Portuguese/ English/ French")} </p>
             <p>: Belo Horizonte, Brasil</p>
-            <p>: {t("Freelance / Intern")} </p>
+            <p>: {t("Web Developer")} </p>
           </div>
         </div>
         <a href={curriculo} download>
