@@ -2,9 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "20.5.1"
-  },
+  "engines": { "node": "18.x" },
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@emotion/react": "^11.7.1",
