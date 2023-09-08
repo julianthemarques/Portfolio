@@ -132,7 +132,7 @@ h6{
       right: 5%;
       top: 3%;
       display: none;
-      z-index: 15;
+      z-index: 300;
       svg{
           font-size: 3rem;
           color: var(--primary-color);

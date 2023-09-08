@@ -74,7 +74,7 @@ function ContactPage({ t }) {
               </div>
             </form>
           </div>
-          <div className="right-content">
+          <div className="left-content">
             <ContactItem
               title={t("Phone")}
               icon={phone}
@@ -100,6 +100,7 @@ function ContactPage({ t }) {
 
 const ContactPageStyled = styled.section`
   .contact-section {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
@@ -125,9 +126,6 @@ const ContactPageStyled = styled.section`
     }
     .form {
       width: 100%;
-      @media screen and (max-width: 502px) {
-        width: 70%;
-      }
       .form-field {
         margin-top: 2rem;
         position: relative;

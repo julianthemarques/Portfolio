@@ -17,10 +17,10 @@ function ResumeItem({ date, title, subTitle }) {
 
 const ResumeItemStyled = styled.div`
   display: flex;
-  @media screen and (max-width: 421px) {
+  @media screen and (max-width: 450px) {
     h5,
     h6 {
-      font-size: 80%;
+      font-size: 75% !important;
       padding-bottom: 3rem;
     }
   }

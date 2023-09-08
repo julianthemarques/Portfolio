@@ -64,7 +64,7 @@ const AboutSectionStyled = styled.div`
     width: 100%;
     h3 {
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: var(--white-color);
       span {
         font-size: 2rem;
@@ -81,39 +81,35 @@ const AboutSectionStyled = styled.div`
     margin-top: 2rem;
     h3 {
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: var(--white-color);
       span {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: var(--primary-color);
       }
     }
     .about-info {
       display: flex;
       padding-bottom: 1.4rem;
+      padding: 1rem;
       .info-title {
         color: var(--white-color);
         p {
           font-weight: 600;
+          @media screen and (max-width: 480px) {
+            font-size: 0.8rem;
+            white-space: nowrap;
+          }
         }
       }
       .info-title,
       .info {
         p {
           padding: 0.3rem 0;
-        }
-      }
-    }
-    .about-info {
-      display: flex;
-      padding: 1rem;
-      .info-title {
-        padding-right: 3rem;
-      }
-      .info-title,
-      .info {
-        p {
-          padding: 0.3rem 0;
+          @media screen and (max-width: 480px) {
+            font-size: 0.8rem;
+            white-space: nowrap;
+          }
         }
         padding: 1rem 0;
       }

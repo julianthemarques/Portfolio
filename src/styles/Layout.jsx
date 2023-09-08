@@ -6,6 +6,10 @@ export const InnerLayout = styled.div`
     padding: 4rem;
   }
   @media screen and (max-width: 510px) {
-    padding: 3rem;
+    width:100%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; 
   }
 `;

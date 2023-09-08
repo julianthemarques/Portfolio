@@ -19,10 +19,22 @@ const ContactItemStyled = styled.div`
   background-color: var(--background-dark-grey);
   display: flex;
   align-items: center;
+  border-radius: 1px;
+  @media screen and (max-width: 502px) {
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 0;
+  }
   &:not(:last-child) {
     margin-bottom: 2.5rem;
+    white-space: break-spaces;
   }
   .left-content {
+    @media screen and (max-width: 502px) {
+      margin-bottom: 1rem;
+    }
+
     padding: 1.5rem;
     border: 1px solid var(--border-color);
     font-size: 2rem;
@@ -43,6 +55,9 @@ const ContactItemStyled = styled.div`
     }
     p {
       padding: 0.1rem 0;
+      @media screen and (max-width: 502px) {
+        font-size: 0.7rem;
+      }
     }
   }
 `;

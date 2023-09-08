@@ -22,6 +22,9 @@ const SmallTitleStyled = styled.div`
   h3 {
     color: var(--white-color);
     font-size: 2rem;
+    @media screen and (max-width: 426px) {
+      font-size: 1.5rem;
+    }
   }
 `;
 
