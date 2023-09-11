@@ -15,7 +15,7 @@ function ContactItem({ title, icon, cont, adress }) {
 }
 
 const ContactItemStyled = styled.div`
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1.5rem;
   background-color: var(--background-dark-grey);
   display: flex;
   align-items: center;
@@ -24,7 +24,6 @@ const ContactItemStyled = styled.div`
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    padding: 1rem 0;
   }
   &:not(:last-child) {
     margin-bottom: 2.5rem;
