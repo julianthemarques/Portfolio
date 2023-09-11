@@ -38,10 +38,18 @@ function App() {
     setCheckedLanguage(!checkedLanguage);
   };
 
+  console.log(navToggle);
+
   return (
     <div className="App">
+      {navToggle && (
+        <CloseSideBarStyle
+          onClick={() => {
+            setNavToggle(false);
+          }}
+        />
+      )}
       <Sidebar navToggle={navToggle} />
-
       <div className="theme">
         <div className="light-dark-mode">
           <div className="left-content">
@@ -99,6 +107,15 @@ function App() {
     </div>
   );
 }
+
+const CloseSideBarStyle = styled.div`
+  @media screen and (max-width: 1200px) {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 19;
+  }
+`;
 
 const MainContentStyled = styled.main`
   position: relative;
