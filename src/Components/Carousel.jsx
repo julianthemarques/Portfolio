@@ -2,10 +2,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import styled from "styled-components";
-import camping from "../img/camping.jpg";
-import fishing from "../img/fishing.jpg";
-import musicInstrument from "../img/musicInstrument.jpg";
-import programming from "../img/programming.jpg";
+import camping from "../assets/img/camping.jpg";
+import fishing from "../assets/img/fishing.jpg";
+import musicInstrument from "../assets/img/musicInstrument.jpg";
+import programming from "../assets/img/programming.jpg";
 import "../styles/carousel.css";
 
 function ControlledCarousel() {

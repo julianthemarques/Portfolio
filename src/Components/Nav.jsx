@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import profilePic from "../img/profilePic.webp";
+import profilePic from "../assets/img/profilePic.webp";
 
 function Nav() {
   const { t } = useTranslation();

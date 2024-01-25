@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import GitHub from "@material-ui/icons/GitHub";
+import WebIcon from "@mui/icons-material/Web";
 
 function Menu({ menuItem }) {
   return (
@@ -14,7 +15,7 @@ function Menu({ menuItem }) {
                 <div className="pseudoDiv">
                   <div className="iconLink">
                     <a href={item.link1} target="_blank">
-                      <GitHub />
+                      <WebIcon />
                     </a>
                   </div>
                 </div>
