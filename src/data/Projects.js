@@ -1,6 +1,6 @@
-import pokemonimg from "../img/projImages/pokemonimg.png";
-import todoimg from "../img/projImages/todoimg.jpg";
-import sneakersimg from "../img/projImages/sneakersimg.jpg";
+import pokemonimg from "../assets/img/projImages/pokemonimg.png";
+import todoimg from "../assets/img/projImages/todoimg.jpg";
+import sneakersimg from "../assets/img/projImages/sneakersimg.jpg";
 
 const projects = [
   {
