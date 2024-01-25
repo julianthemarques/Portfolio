@@ -1,5 +1,6 @@
 import pokemonimg from "../img/projImages/pokemonimg.png";
 import todoimg from "../img/projImages/todoimg.jpg";
+import sneakersimg from "../img/projImages/sneakersimg.jpg";
 
 const projects = [
   {
@@ -17,6 +18,14 @@ const projects = [
     link1: "https://github.com/juulmrqs/Using-Pokemon-API",
     title: "Pokedex consuming API",
     text: "Created with React",
+  },
+  {
+    id: 3,
+    category: "Next",
+    image: sneakersimg,
+    link1: "https://sneakers-e-commerce-dusky.vercel.app/",
+    title: "Sneakers Landing Page",
+    text: "Created with Next",
   },
 ];
 
